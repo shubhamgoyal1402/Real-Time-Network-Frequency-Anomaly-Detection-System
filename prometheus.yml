@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'go_service'
+    static_configs:
+      - targets: ['localhost:9091']  # The port where Go service exposes metrics
